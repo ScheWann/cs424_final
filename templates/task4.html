@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="task">
+        <div class="task_sub" id="Solution_Rates_Violation">
+            <div class="task_title">Solution rates by years</div>
+            <div id="task4_2_1"></div>
+        </div>
+
+        <div class="task_sub" id="Matrix_Heatmap">
+            <div class="task_title">Matrix heatmap of building violation and solution rates</div>
+            <div id="task4_2_2"></div>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='task4_1_1.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='task4_1_2.js') }}"></script>
+
+{% endblock %}

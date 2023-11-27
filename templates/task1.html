@@ -1,0 +1,55 @@
+{% extends "index.html" %} 
+
+{% block content %}
+    <div class="task">
+        <div class="task_sub" id="calendar">
+            <div class="task_title">Building violation counts calendar</div>
+            <div class="select_group">
+                <!-- years select -->
+                <select id="yearSelect" class="form-select" aria-label="Default select example">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+                <!-- building violation select -->
+                <select id="violationTypeSelect" class="form-select" aria-label="Default select example"></select>
+            </div>
+            <div id="task1_1_2"></div>
+        </div>
+
+        <div class="task_sub" id="countIncomePlot">
+            <div class="task_title">Violation Building Counts and Personal Income from 2018 to 2023</div>
+            <div id="task1_1_1"></div>
+        </div>
+
+        <div class="task_sub" id="chicagoMap">
+            <div class="task_title">Building violation distribution in the Chicago</div>
+            <div class="select_group">
+                <!-- years select -->
+                <select id="mapYearSelect" class="form-select" aria-label="Default select example">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </select>
+            </div>
+            <div id="task1_2_1"></div>
+        </div>
+
+        <div class="task_sub" id="violationCountInZip">
+            <div class="task_title">Building violation counts in zip</div>
+            <div id="task1_2_2"></div>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='task1_1_1.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='task1_1_2.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='task1_2_1.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='task1_2_2.js') }}"></script>
+
+{% endblock %}

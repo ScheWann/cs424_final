@@ -1,0 +1,24 @@
+{% extends "index.html" %} 
+
+{% block content %}
+    <div class="task">
+        <div class="task_sub" id="income_in_Highest_Violation_Area">
+            <div class="task_title">Highest Violation Building Counts district and income from 2018 to 2023</div>
+            <div class="select_group">
+                <select id="sortSelect" class="form-select" aria-label="Default select example">
+                    <option value="year">Year</option>
+                    <option value="violation">Violations</option>
+                </select>
+            </div>
+            <div id="task3_1_1"></div>
+        </div>
+
+        <div class="task_sub" id="low_And_High_Violation_area_comparation">
+            <div class="task_title">Income in the highest building violation district and lowest building violation district</div>
+            <div id="task3_1_2"></div>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='task3_1_1.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='task3_1_2.js') }}"></script>
+{% endblock %}
