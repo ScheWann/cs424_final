@@ -3,6 +3,7 @@
 > CS424 assignment 4
 >
 > Teammates: Siyuan Zhao, Alicia Delgado, Konduru Harsha Vardhan, Nadia Taiym  
+> Website: https://cs424-a22a31c0c0d4.herokuapp.com/  
 > Dataset: [Building violations](https://data.cityofchicago.org/Buildings/Building-Violations/22u3-xenr)
 
 <img src="./imgs/screenshots/index.png">
